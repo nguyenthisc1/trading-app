@@ -14,9 +14,6 @@ class DefaultFirebaseOptions {
     if (kIsWeb) return web;
     if (defaultTargetPlatform == TargetPlatform.android) return android;
     if (defaultTargetPlatform == TargetPlatform.iOS) return ios;
-    if (defaultTargetPlatform == TargetPlatform.macOS) {
-      return DefaultFirebaseOptions.macos;
-    }
     throw UnsupportedError(
       'DefaultFirebaseOptions are not supported for this platform.',
     );
